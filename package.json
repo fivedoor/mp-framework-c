@@ -1,0 +1,41 @@
+{
+  "name": "fivedoor-email-frame",
+  "version": "1.0.0",
+  "description": "An email build framework",
+  "main": "gulpfile.js",
+  "scripts": {},
+  "author": "fivedoor",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "colors": "^1.1.2",
+    "del": "^3.0.0",
+    "fs": "0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-cache": "^0.4.5",
+    "gulp-data": "^1.2.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-inline-css": "^3.1.0",
+    "gulp-jsbeautifier": "^2.0.3",
+    "gulp-livereload": "^4.0.2",
+    "gulp-merge-json": "^0.5.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^5.0.1",
+    "jshint": "^2.9.2",
+    "run-sequence": "^1.2.1"
+  },
+  "devDependencies": {
+    "gulp-inline": "^0.1.3",
+    "gulp-remove-code": "^3.0.4",
+    "gulp-replace": "^1.0.0",
+    "gulp-string-replace": "^1.1.2",
+    "gulp-strip-code": "^0.1.4",
+    "gulp-strip-comments": "^2.5.2",
+    "gulp4-run-sequence": "^1.0.0"
+  }
+}

@@ -1,0 +1,108 @@
+ /*
+  |==========================================================================
+  | MODULE CSS 
+  |==========================================================================
+  */
+  /** Fix widths for conditional tables */
+  .ie-target .container__td,
+  .mso-target .container__td {
+      padding-right: 36px !important; 
+      padding-left: 36px !important;
+  }
+ /*
+  |--------------------------------------------------------------------------
+  |  BG HERO  
+  |-------------------------------------------------------------------------- 
+  */  
+  #bg-hero {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/ngdataformdemo.appspot.com/o/email%2Fhomeandaway%2Fhero_hi_css_bg.jpg?alt=media&token=70d859f2-20f0-43b3-bde1-4298d861c972") !important;
+    background-position: center bottom !important; /** overides background center center - why? */
+    background-size: cover !important;  /** overides background cover - why? */
+    /** height: 160px !important;  */
+    background-color: #eeeeee !important;   
+  }
+   /** Overide fixed bg width container (for Outlook 2007+) to be full width of conditional mso/ie ghost container  */
+  #bg-hero__text-container
+  {
+    width:100% !important;
+  } 
+  /** Overide fixed bg width container for Outlook 2007+ to full width  */
+  .mso-target #bg-hero {
+      background-image: none !important;
+      background: url("https://firebasestorage.googleapis.com/v0/b/ngdataformdemo.appspot.com/o/email%2Fhomeandaway%2Fhero_lo_css_bg.jpg?alt=media&token=74f23c13-a1f5-429c-9744-61e16c9eeca9") !important;   
+  }
+
+  /** Overide 90% width -OL doesn't like  */
+   .ie-target #bg-hero .content {
+    width: 636px !important;
+  }
+
+ /*
+  |--------------------------------------------------------------------------
+  |  2COL STACK 
+  |-------------------------------------------------------------------------- 
+  */    
+  /**  Overide width to work with mso/ie conditional code - define first COL container td width */
+  .ie-target #width-330,
+  .mso-target #width-330
+  {
+    width: 330px !important;
+  }
+ /**  Overide width to work with mso/ie conditional code - full width table COL in L&R container td  */
+  .ie-target .mod-2col-stack .col-l,
+  .mso-target .mod-2col-stack .col-l,
+  .ie-target .mod-2col-stack .col-r,
+  .mso-target .mod-2col-stack .col-r
+  {
+    width: 100% !important;
+  }
+ /*
+  |--------------------------------------------------------------------------
+  |  2COL FLUID 
+  |-------------------------------------------------------------------------- 
+  */      
+  /**  Overide width to work with mso/ie conditional code */
+  .ie-target .mod-2col-fluid .col-r,
+  .mso-target .mod-2col-fluid .col-r
+  {
+    width: 100% !important;
+  }
+
+ /*
+  |--------------------------------------------------------------------------
+  |  BG 3COL 
+  |-------------------------------------------------------------------------- 
+  */     
+ #bg-3col-1  { 
+    background-image: url("https://s3.amazonaws.com/ha-design/campaign/2018/us/traveler/adhoc/welcome/US/heroaa.jpg") !important;
+    background-size: 100% auto !important;
+    /** height: 150px !important;*/  
+    background-position:top !important;
+    background-color: #ffffff !important; 
+  }
+  /** Low res version for OL2000 */  
+  .ie-target #bg-3col-1  { 
+    background-image: url("https://s3.amazonaws.com/ha-design/campaign/2018/us/traveler/adhoc/welcome/US/herocco.jpg") !important;
+  }
+  #bg-3col-2 { 
+    background-image: url("https://s3.amazonaws.com/ha-design/campaign/2018/us/traveler/adhoc/welcome/US/herobb.jpg") !important;
+    background-size: 100% auto !important;
+    /** height: 150px !important; */
+    background-position:top !important;
+    background-color: #ffffff !important;
+  }
+  /** Low res version for OL2000 */  
+  .ie-target #bg-3col-2  { 
+    background-image: url("https://s3.amazonaws.com/ha-design/campaign/2018/us/traveler/adhoc/welcome/US/herocco.jpg") !important;
+  }
+  #bg-3col-3 { 
+    background-image: url("https://s3.amazonaws.com/ha-design/campaign/2018/us/traveler/adhoc/welcome/US/herocc.jpg") !important;
+    background-size: 100% auto !important;
+    /** height: 150px !important; */
+    background-position:top !important;
+    background-color: #ffffff !important;
+  }
+  /** Low res version for OL2000 */  
+  .ie-target #bg-3col-3  { 
+    background-image: url("https://s3.amazonaws.com/ha-design/campaign/2018/us/traveler/adhoc/welcome/US/herocco.jpg") !important;
+  }

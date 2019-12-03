@@ -1,0 +1,25 @@
+  /*
+  |==========================================================================
+  | TESTING 
+  |========================================================================== 
+  |  
+
+  */ 
+table tr td {background-color:beige !important;}
+table tr td table tr td {
+    background-color: pink !important;
+}
+table tr td table tr td table tr td {
+    background-color: orange !important;
+}
+table tr td table tr td table tr td table tr td {
+    background-color: green !important;
+}
+table tr td table tr td table tr td table tr td table tr td {
+    background-color: skyblue !important;
+}
+table tr td table tr td table tr td table tr td table tr td table tr td {
+    background-color: gold !important;
+}
+
+                                                                                      

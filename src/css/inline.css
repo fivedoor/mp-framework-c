@@ -1,0 +1,447 @@
+/*
+|==========================================================================
+| INLINE CSS 
+|==========================================================================
+*/
+/** 
+*/
+/*
+|--------------------------------------------------------------------------
+| GLOBAL
+|-------------------------------------------------------------------------- 
+*/
+body
+{
+    padding: 0;
+}
+img
+{
+    line-height: 100%;
+
+    display: block;
+
+    height: auto;
+
+    text-decoration: none;
+
+    border: 0;
+    outline: none;
+}
+table.wrapper
+{
+    padding: 0;
+}
+/** beige  target elements which are DIRECT children (not nested) and only the first <td> of those children */
+.wrapper > tr > td:nth-child(1)
+{
+    padding: 0;
+}
+table.container
+{
+    padding: 0;
+}
+/** pink */
+td.container__td
+{
+    padding-top: 0;
+    padding-right: 5.084745762712%; /** 36px */
+    padding-bottom: 0;
+    padding-left: 5.084745762712%; /** 36px */
+}
+
+/*
+|--------------------------------------------------------------------------
+| TYPOGRAPHY
+|-------------------------------------------------------------------------- 
+*/
+.h1
+{
+    font-family: Helvetica, Arial, sans-serif, 'Roboto';
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 51px;
+
+    padding: 60px 0 20px 10px;
+    padding-bottom: 10px;
+
+    text-align: center;
+
+    color: #fff;
+
+    mso-height-rule: exactly;
+}
+.h2
+{
+    font-family: Helvetica, Arial, sans-serif, 'Roboto';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+
+    padding-bottom: 10px;
+
+    text-align: center;
+
+    color: #fff;
+}
+.h3
+{
+    font-family: Helvetica, Arial, sans-serif, 'Roboto';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+
+    padding-bottom: 5px;
+
+    text-align: left;
+
+    color: #353e44;
+}
+.h4
+{
+    font-family: Helvetica, Arial, sans-serif, 'Roboto';
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 34px;
+
+    padding-bottom: 10px;
+
+    text-align: center;
+
+    color: #353e44;
+}
+.p
+{
+    font-family: Helvetica, Arial, sans-serif, 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    padding-bottom: 5px;
+
+    text-align: left;
+
+    color: #70767a;
+}
+.p1
+{
+    font-family: Helvetica, Arial, sans-serif, 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+
+    padding-bottom: 20px;
+
+    text-align: center;
+
+    color: #fff;
+}
+.p-w
+{
+    font-family: Helvetica, Arial, sans-serif, 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    padding-bottom: 20px;
+
+    text-align: center;
+
+    color: #fff;
+}
+.cta
+{
+    font-family: Arial, sans-serif, 'FreightBold';
+    font-size: 13px;
+    font-weight: 600;
+
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #228ae6;
+}
+.button a
+{
+    font-family: Arial, sans-serif, 'FreightBold';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+
+    display: inline-block;
+
+    padding: 0;
+
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0;
+
+    color: #228ae6;
+    border-top: 14px solid #fff;
+    border-right: 40px solid #fff;
+    border-bottom: 14px solid #fff;
+    border-left: 40px solid #fff;
+    border-radius: 25px;
+    background-color: #fff;
+
+    mso-hide: all;
+    -webkit-text-size-adjust: none;
+}
+
+.footer-text
+{
+    font-family: Helvetica, Arial, sans-serif, 'Roboto';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+
+    padding-bottom: 10px;
+
+    text-align: center;
+
+    color: #70767a;
+}
+.tac
+{
+    text-align: center;
+}
+
+/*
+|--------------------------------------------------------------------------
+|  1COL 
+|-------------------------------------------------------------------------- 
+*/
+.mod-1col .container__td
+{
+    padding-top: 10px;
+    padding-right: 0;
+    padding-bottom: 10px;
+    padding-left: 0;
+
+    background-color: #f7f7f8;
+}    /** pink  | overide container td padding here if required  e.g. for full width img */
+.mod-1col .content
+{
+    padding: 0;
+}
+.mod-1col .content__td
+{
+    padding: 0;
+}    /** orange */
+.mod-1col .content__td img
+{
+    width: 125px;
+    max-width: 125px;
+}
+
+/*
+|--------------------------------------------------------------------------
+|  BG HERO 
+|-------------------------------------------------------------------------- 
+*/
+/** pink  | overides container__td */
+/** adjust bg position and bg size to taste  */
+/**  background-imageFor GANGA GMAIL */
+#bg-hero
+{
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/ngdataformdemo.appspot.com/o/email%2Fhomeandaway%2Fhero_lo_inline_bg-img.jpg?alt=media&token=9cc3de05-cc9c-4582-9d57-04ed9a62ad04'); 
+    background-repeat: no-repeat;
+    background-position: center bottom; 
+    background-size: cover;  
+}   
+/** Fixed bg width container for Outlook 2007+  - will overide with CSS to full width  */
+#bg-hero__text-container
+{
+    width: 708px;
+    max-width: 708px;
+}
+/**  container__td is nested one level deeper than normal in the BG mod */
+#bg-hero__text-container .container__td
+{
+    padding-top: 0;
+    padding-right: 5.084745762712%; /** 36px */
+    padding-bottom: 75px;
+    padding-left: 5.084745762712%; /** 36px */
+}
+#bg-hero__overlap
+{
+    /** padding-top: 40px; */
+    height: 40px;
+
+    background-color: #fff;
+}
+/*
+|--------------------------------------------------------------------------
+|  2 COL FLUID
+|-------------------------------------------------------------------------- 
+*/
+/** pink  | overide container td padding here if required  e.g. for full width img */
+.mod-2col-fluid .container__td
+{
+    padding-top: 40px;
+    padding-bottom: 30px;
+
+    border-bottom: 1px solid #d7d8da;
+}
+/** Get rid of top pad on first of 2col modules */
+#first .container__td
+{
+    padding-top: 0;
+}
+.mod-2col-fluid .inner-container
+{
+    padding: 0;
+}
+/** orange   */
+.mod-2col-fluid .inner-container__td
+{
+    padding: 0;
+}
+/** LEFT COL ----------------------------------------------- */
+.mod-2col-fluid .col-l
+{
+    padding: 0;
+}
+/** green  */
+.mod-2col-fluid .col-l__td
+{
+    padding: 0 0 0 34px;
+}
+.mod-2col-fluid .col-l .content
+{
+    padding: 0;
+}
+/** RIGHT COL ----------------------------------------------- */
+.mod-2col-fluid .col-r
+{
+    padding: 0;
+}
+/** green  */
+.mod-2col-fluid .col-r__td
+{
+    width: 100%;
+    padding: 0 34px 0 34px;
+
+    text-align: left;
+    vertical-align: top;
+} /** green  */
+.mod-2col-fluid .content-container
+{
+    padding: 0;
+}
+.mod-2col-fluid .content-container__td
+{
+    padding: 0;
+} /** skyblue  */
+.mod-2col-fluid .col-r .content
+{
+    padding: 0;
+}
+/*
+|--------------------------------------------------------------------------
+|  2 COL STACK
+|-------------------------------------------------------------------------- 
+*/
+.mod-2col-stack .container__td
+{
+    padding-top: 24px;
+    padding-right: 5.084745762712%;
+    padding-bottom: 0;
+    padding-left: 5.084745762712%;
+} /** pink  | overide container td padding here if required  e.g. for full width img */
+
+.mod-2col-stack .inner-container
+{
+    padding: 0;
+}
+/** orange  */
+.mod-2col-stack .inner-container__td
+{
+    padding: 0;
+}
+/** LEFT COL -------------------------------------------------- */
+.mod-2col-stack .col-l
+{
+    width: 51.88679245283%;
+}
+/** green  */
+.mod-2col-stack .col-l__td
+{
+    padding: 0 ;
+}
+.mod-2col-stack .content-container
+{
+    padding: 0;
+}
+/** skyblue  */
+.mod-2col-stack .content-container__td
+{
+    padding: 25px 21px 25px;
+}
+.mod-2col-stack .col-l .content
+{
+    padding: 0;
+}
+
+/** RIGHT COL ----------------------------------------------- */
+.mod-2col-stack .col-r
+{
+    width: 48.11320754717%;
+}
+.mod-2col-stack .col-r__td
+{
+    width: 100%;
+    padding: 0;
+    padding-top: 18px;
+
+    text-align: left;
+    vertical-align: top;
+} /** green  */
+/*
+|--------------------------------------------------------------------------
+|  3 COL STACK 
+|-------------------------------------------------------------------------- 
+*/
+.mod-3col-title  .container__td
+{
+    padding-top: 30px;
+}
+.mod-3col .container__td
+{
+    padding-top: 20px;
+    padding-bottom: 36px ;
+
+    border-bottom: 1px solid #d7d8da;
+}
+.mod-3col .col-1,
+.mod-3col .col-2,
+.mod-3col .col-3
+{
+    width: 32.389937106918%;
+}
+.mod-3col .gutter
+{
+    width: 1.415094339623%;
+}
+.mod-3col .col-1__td,
+.mod-3col .col-2__td,
+.mod-3col .col-3__td
+{
+    text-align: left;
+    vertical-align: top;
+}
+.mod-3col-bg
+{
+    height: 150px;
+}
+/** PAdding controls height of bg col */
+#bg-3col-1 .p1,
+#bg-3col-2 .p1,
+#bg-3col-3 .p1
+{
+    padding: 120px 0 10px;
+} 
