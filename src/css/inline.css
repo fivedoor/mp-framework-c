@@ -44,9 +44,9 @@ table.container
 td.container__td
 {
     padding-top: 0;
-    padding-right: 5.084745762712%; /** 36px */
-    padding-bottom: 0;
-    padding-left: 5.084745762712%; /** 36px */
+   padding-right:  2.941176470588%;
+    padding-bottom:0;
+    padding-left:  2.941176470588%;
 }
 
 /*
@@ -54,99 +54,80 @@ td.container__td
 | TYPOGRAPHY
 |-------------------------------------------------------------------------- 
 */
-.h1
-{
-    font-family: Helvetica, Arial, sans-serif, 'Roboto';
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 51px;
 
-    padding: 60px 0 20px 10px;
-    padding-bottom: 10px;
+.preheader
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 16px;
 
     text-align: center;
 
-    color: #fff;
-
-    mso-height-rule: exactly;
+    color: #7d7d7d;
 }
-.h2
+.preheader a
 {
-    font-family: Helvetica, Arial, sans-serif, 'Roboto';
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 34px;
+    text-decoration: underline;
+    color: #000000;
+}
+.nav-text 
+{
+    color: #000000;
+    font-weight: normal;
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.5pt !important;
+}
+.nav-text a
+{
+    text-decoration: none;
+    color: #000000;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 0.5pt !important;
+    border-top: 9px solid #ffffff; 
+    border-bottom: 9px solid #ffffff; 
+    border-right: 8px solid #ffffff; 
+    border-left: 8px solid #ffffff; 
+    display: inline-block;
+}
 
-    padding-bottom: 10px;
+.pid-title
+{
+    font-family: georgia, serif;
+    color: #2b2b2b;
+    font-size: 12px;
+    line-height: 21px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 6px 0;
 
+}
+.pid-text
+{
+    font-family: georgia, serif;
+    color: #2b2b2b;
+    font-size: 12px;
+    line-height: 19px;
+    text-decoration: none;
+    padding: 6px 0;
+
+}
+.pid-title a, 
+.pid-text a
+{
+    text-decoration: none;
+    color: #2b2b2b;
+}
+.footer-text
+{
+    padding: 0 0 13px 0;
+    font-family: Georgia, Times, serif;
+    font-size: 12px;
+    color: #2b2b2b;
+    line-height: 18px;
     text-align: center;
-
-    color: #fff;
-}
-.h3
-{
-    font-family: Helvetica, Arial, sans-serif, 'Roboto';
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 24px;
-
-    padding-bottom: 5px;
-
-    text-align: left;
-
-    color: #353e44;
-}
-.h4
-{
-    font-family: Helvetica, Arial, sans-serif, 'Roboto';
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 34px;
-
-    padding-bottom: 10px;
-
-    text-align: center;
-
-    color: #353e44;
-}
-.p
-{
-    font-family: Helvetica, Arial, sans-serif, 'Roboto';
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-
-    padding-bottom: 5px;
-
-    text-align: left;
-
-    color: #70767a;
-}
-.p1
-{
-    font-family: Helvetica, Arial, sans-serif, 'Roboto';
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
-
-    padding-bottom: 20px;
-
-    text-align: center;
-
-    color: #fff;
-}
-.p-w
-{
-    font-family: Helvetica, Arial, sans-serif, 'Roboto';
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-
-    padding-bottom: 20px;
-
-    text-align: center;
-
-    color: #fff;
 }
 .cta
 {
@@ -160,46 +141,7 @@ td.container__td
 
     color: #228ae6;
 }
-.button a
-{
-    font-family: Arial, sans-serif, 'FreightBold';
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 20px;
 
-    display: inline-block;
-
-    padding: 0;
-
-    text-align: center;
-    text-decoration: none;
-    letter-spacing: 0;
-
-    color: #228ae6;
-    border-top: 14px solid #fff;
-    border-right: 40px solid #fff;
-    border-bottom: 14px solid #fff;
-    border-left: 40px solid #fff;
-    border-radius: 25px;
-    background-color: #fff;
-
-    mso-hide: all;
-    -webkit-text-size-adjust: none;
-}
-
-.footer-text
-{
-    font-family: Helvetica, Arial, sans-serif, 'Roboto';
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-
-    padding-bottom: 10px;
-
-    text-align: center;
-
-    color: #70767a;
-}
 .tac
 {
     text-align: center;
@@ -213,67 +155,37 @@ td.container__td
 .mod-1col .container__td
 {
     padding-top: 10px;
-    padding-right: 0;
     padding-bottom: 10px;
-    padding-left: 0;
 
-    background-color: #f7f7f8;
+    background-color: #ffffff;
 }    /** pink  | overide container td padding here if required  e.g. for full width img */
 .mod-1col .content
 {
     padding: 0;
 }
-.mod-1col .content__td
+.mod-1col .logo
 {
-    padding: 0;
+     padding-top: 24px;
+    padding-bottom: 24px;
 }    /** orange */
-.mod-1col .content__td img
+.mod-1col .logo img
 {
-    width: 125px;
-    max-width: 125px;
+    width: 306px;
+    max-width: 306px;
+}
+.mod-1col #nav
+{
+     padding-top: 14px;
+    padding-bottom: 0;
+
+}
+.mod-1col #hero-img
+{
+     padding-top: 8px;
+
 }
 
-/*
-|--------------------------------------------------------------------------
-|  BG HERO 
-|-------------------------------------------------------------------------- 
-*/
-/** pink  | overides container__td */
-/** adjust bg position and bg size to taste  */
-/**  background-imageFor GANGA GMAIL */
-#bg-hero
-{
-    margin: 0;
-    padding: 0;
 
-    text-align: center;
-
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/ngdataformdemo.appspot.com/o/email%2Fhomeandaway%2Fhero_lo_inline_bg-img.jpg?alt=media&token=9cc3de05-cc9c-4582-9d57-04ed9a62ad04'); 
-    background-repeat: no-repeat;
-    background-position: center bottom; 
-    background-size: cover;  
-}   
-/** Fixed bg width container for Outlook 2007+  - will overide with CSS to full width  */
-#bg-hero__text-container
-{
-    width: 708px;
-    max-width: 708px;
-}
-/**  container__td is nested one level deeper than normal in the BG mod */
-#bg-hero__text-container .container__td
-{
-    padding-top: 0;
-    padding-right: 5.084745762712%; /** 36px */
-    padding-bottom: 75px;
-    padding-left: 5.084745762712%; /** 36px */
-}
-#bg-hero__overlap
-{
-    /** padding-top: 40px; */
-    height: 40px;
-
-    background-color: #fff;
-}
 /*
 |--------------------------------------------------------------------------
 |  2 COL FLUID
@@ -403,45 +315,56 @@ td.container__td
 } /** green  */
 /*
 |--------------------------------------------------------------------------
-|  3 COL STACK 
+|  4 COL STACK
 |-------------------------------------------------------------------------- 
 */
-.mod-3col-title  .container__td
+.mod-4col-stack-even .container__td
 {
-    padding-top: 30px;
-}
-.mod-3col .container__td
-{
-    padding-top: 20px;
-    padding-bottom: 36px ;
+    padding-top: 24px;
+    padding-right:  2.941176470588%;
+    padding-bottom:0;
+    padding-left:  2.941176470588%;
+} /** pink  | overide container td padding here if required  e.g. for full width img */
 
-    border-bottom: 1px solid #d7d8da;
-}
-.mod-3col .col-1,
-.mod-3col .col-2,
-.mod-3col .col-3
+.mod-4col-stack-even .inner-container
 {
-    width: 32.389937106918%;
+    padding: 0;
 }
-.mod-3col .gutter
+/** orange  */
+.mod-4col-stack-even .inner-container__td
 {
-    width: 1.415094339623%;
+    padding: 0;
 }
-.mod-3col .col-1__td,
-.mod-3col .col-2__td,
-.mod-3col .col-3__td
+/** LEFT COL -------------------------------------------------- */
+.mod-4col-stack-even .col-l
 {
-    text-align: left;
-    vertical-align: top;
+    width: 48.4375%;
 }
-.mod-3col-bg
+/** green  */
+
+
+/** RIGHT COL ----------------------------------------------- */
+.mod-4col-stack-even .col-r
 {
-    height: 150px;
+    width:  48.4375%;
 }
-/** PAdding controls height of bg col */
-#bg-3col-1 .p1,
-#bg-3col-2 .p1,
-#bg-3col-3 .p1
+
+/**  INNER COLs ----------------------------------------------- */
+.mod-4col-stack-even .col-1,
+.mod-4col-stack-even .col-2,
+.mod-4col-stack-even .col-3,
+.mod-4col-stack-even .col-4
 {
-    padding: 120px 0 10px;
-} 
+    width:  46.774193548387%;
+}
+.mod-4col-stack-even .gutter
+{
+    width:  3.125%;
+}
+.mod-4col-stack-even .col-l .gutter,
+.mod-4col-stack-even .col-r .gutter
+
+{
+    width:  6.451612903226%;
+}
+
