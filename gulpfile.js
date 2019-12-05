@@ -342,9 +342,9 @@ gulp.task('css:inject', function() {
     .src('src/compiled/css/njk/**/*.+(html|njk)')
      .pipe(rename("index.html"))
     // Adding data to Nunjucks
-    .pipe(data(function() {
-      return require('./src/data/data.json')
-    }))
+    //.pipe(data(function() {
+   //   return require('./src/data/data.json')
+   // }))
     // Renders template with nunjucks
     .pipe(nunjucksRender({
       path: ['src/compiled/']
