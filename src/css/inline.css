@@ -163,12 +163,12 @@ td.container__td
 {
     padding: 0;
 }
-.mod-1col .logo
+.mod-1col #logo
 {
      padding-top: 24px;
     padding-bottom: 24px;
 }    /** orange */
-.mod-1col .logo img
+.mod-1col #logo img
 {
     width: 306px;
     max-width: 306px;
@@ -185,158 +185,28 @@ td.container__td
 
 }
 
-
-/*
-|--------------------------------------------------------------------------
-|  2 COL FLUID
-|-------------------------------------------------------------------------- 
-*/
-/** pink  | overide container td padding here if required  e.g. for full width img */
-.mod-2col-fluid .container__td
-{
-    padding-top: 40px;
-    padding-bottom: 30px;
-
-    border-bottom: 1px solid #d7d8da;
-}
-/** Get rid of top pad on first of 2col modules */
-#first .container__td
-{
-    padding-top: 0;
-}
-.mod-2col-fluid .inner-container
-{
-    padding: 0;
-}
-/** orange   */
-.mod-2col-fluid .inner-container__td
-{
-    padding: 0;
-}
-/** LEFT COL ----------------------------------------------- */
-.mod-2col-fluid .col-l
-{
-    padding: 0;
-}
-/** green  */
-.mod-2col-fluid .col-l__td
-{
-    padding: 0 0 0 34px;
-}
-.mod-2col-fluid .col-l .content
-{
-    padding: 0;
-}
-/** RIGHT COL ----------------------------------------------- */
-.mod-2col-fluid .col-r
-{
-    padding: 0;
-}
-/** green  */
-.mod-2col-fluid .col-r__td
-{
-    width: 100%;
-    padding: 0 34px 0 34px;
-
-    text-align: left;
-    vertical-align: top;
-} /** green  */
-.mod-2col-fluid .content-container
-{
-    padding: 0;
-}
-.mod-2col-fluid .content-container__td
-{
-    padding: 0;
-} /** skyblue  */
-.mod-2col-fluid .col-r .content
-{
-    padding: 0;
-}
-/*
-|--------------------------------------------------------------------------
-|  2 COL STACK
-|-------------------------------------------------------------------------- 
-*/
-.mod-2col-stack .container__td
-{
-    padding-top: 24px;
-    padding-right: 5.084745762712%;
-    padding-bottom: 0;
-    padding-left: 5.084745762712%;
-} /** pink  | overide container td padding here if required  e.g. for full width img */
-
-.mod-2col-stack .inner-container
-{
-    padding: 0;
-}
-/** orange  */
-.mod-2col-stack .inner-container__td
-{
-    padding: 0;
-}
-/** LEFT COL -------------------------------------------------- */
-.mod-2col-stack .col-l
-{
-    width: 51.88679245283%;
-}
-/** green  */
-.mod-2col-stack .col-l__td
-{
-    padding: 0 ;
-}
-.mod-2col-stack .content-container
-{
-    padding: 0;
-}
-/** skyblue  */
-.mod-2col-stack .content-container__td
-{
-    padding: 25px 21px 25px;
-}
-.mod-2col-stack .col-l .content
-{
-    padding: 0;
-}
-
-/** RIGHT COL ----------------------------------------------- */
-.mod-2col-stack .col-r
-{
-    width: 48.11320754717%;
-}
-.mod-2col-stack .col-r__td
-{
-    width: 100%;
-    padding: 0;
-    padding-top: 18px;
-
-    text-align: left;
-    vertical-align: top;
-} /** green  */
 /*
 |--------------------------------------------------------------------------
 |  4 COL STACK
 |-------------------------------------------------------------------------- 
 */
-.mod-4col-stack-even .container__td
+.mod-4col-stack .container__td
 {
     padding-top: 24px;
-    padding-right:  2.941176470588%;
     padding-bottom:0;
-    padding-left:  2.941176470588%;
 } /** pink  | overide container td padding here if required  e.g. for full width img */
 
-.mod-4col-stack-even .inner-container
+.mod-4col-stack .inner-container
 {
     padding: 0;
 }
 /** orange  */
-.mod-4col-stack-even .inner-container__td
+.mod-4col-stack .inner-container__td
 {
     padding: 0;
 }
 /** LEFT COL -------------------------------------------------- */
-.mod-4col-stack-even .col-l
+.mod-4col-stack .col-l
 {
     width: 48.4375%;
 }
@@ -344,25 +214,84 @@ td.container__td
 
 
 /** RIGHT COL ----------------------------------------------- */
-.mod-4col-stack-even .col-r
+.mod-4col-stack .col-r
 {
     width:  48.4375%;
 }
 
 /**  INNER COLs ----------------------------------------------- */
-.mod-4col-stack-even .col-1,
-.mod-4col-stack-even .col-2,
-.mod-4col-stack-even .col-3,
-.mod-4col-stack-even .col-4
+.mod-4col-stack .col-1,
+.mod-4col-stack .col-2,
+.mod-4col-stack .col-3,
+.mod-4col-stack .col-4
 {
     width:  46.774193548387%;
 }
-.mod-4col-stack-even .gutter
+.mod-4col-stack .col-1 .gutter,
+.mod-4col-stack .col-2 .gutter,
+.mod-4col-stack .col-3 .gutter,
+.mod-4col-stack .col-4 .gutter
 {
     width:  3.125%;
 }
-.mod-4col-stack-even .col-l .gutter,
-.mod-4col-stack-even .col-r .gutter
+.mod-4col-stack .col-l .gutter,
+.mod-4col-stack .col-r .gutter
+
+{
+    width:  6.451612903226%;
+}
+
+/*
+|--------------------------------------------------------------------------
+|  2 COL LONG STACK
+|-------------------------------------------------------------------------- 
+*/
+.mod-2col-long-stack .container__td
+{
+    padding-top: 24px;
+    padding-bottom:0;
+} /** pink  | overide container td padding here if required  e.g. for full width img */
+
+.mod-2col-long-stack .inner-container
+{
+    padding: 0;
+}
+/** orange  */
+.mod-2col-long-stack .inner-container__td
+{
+    padding: 0;
+}
+/** LEFT COL -------------------------------------------------- */
+.mod-2col-long-stack .col-l
+{
+    width: 48.4375%;
+}
+/** green  */
+
+
+/** RIGHT COL ----------------------------------------------- */
+.mod-2col-long-stack .col-r
+{
+    width:  48.4375%;
+}
+
+/**  INNER COLs ----------------------------------------------- */
+.mod-2col-long-stack .col-1,
+.mod-2col-long-stack .col-2,
+.mod-2col-long-stack .col-3,
+.mod-2col-long-stack .col-4
+{
+    width:  46.774193548387%;
+}
+.mod-2col-long-stack .col-1 .gutter,
+.mod-2col-long-stack .col-2 .gutter,
+.mod-2col-long-stack .col-3 .gutter,
+.mod-2col-long-stack .col-4 .gutter
+{
+    width:  3.125%;
+}
+.mod-2col-long-stack .col-l .gutter,
+.mod-2col-long-stack .col-r .gutter
 
 {
     width:  6.451612903226%;

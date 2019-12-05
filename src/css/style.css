@@ -2,6 +2,11 @@
   |==========================================================================
   | MODULE CSS 
   |==========================================================================
+  !!!!TIP: 
+  When targeting IE/MSO - trying to overide percentage width pixel width seems to fail in some cases
+  Targeting a cell without width defined seems to work
+  Overiding percentage padding with pixels seems to work - but may need more testing 
+
   */
   /** Fix widths for conditional tables */
   .ie-target .container__td,
@@ -12,22 +17,59 @@
  
  /*
   |--------------------------------------------------------------------------
-  |  2COL STACK 
+  |  4COL STACK 
   |-------------------------------------------------------------------------- 
   */    
   /**  Overide width to work with mso/ie conditional code - define first COL container td width */
-  .ie-target #width-330,
-  .mso-target #width-330
+  .ie-target .width-145,
+  .mso-target .width-145
   {
-    width: 330px !important;
+    width: 145px !important;
   }
- /**  Overide width to work with mso/ie conditional code - full width table COL in L&R container td  */
-  .ie-target .mod-2col-stack .col-l,
-  .mso-target .mod-2col-stack .col-l,
-  .ie-target .mod-2col-stack .col-r,
-  .mso-target .mod-2col-stack .col-r
+ /**  Overide inline percentage css width to work with mso/ie conditional code - full width table COL & gutter in L&R container td  */
+  .ie-target .mod-4col-stack .col-l,
+  .mso-target .mod-4col-stack .col-l,
+  .ie-target .mod-4col-stack .col-r,
+  .mso-target .mod-4col-stack .col-r,
+  .ie-target .mod-4col-stack .gutter,
+  .mso-target .mod-4col-stack .gutter,
+  .ie-target .mod-4col-stack .col-1,
+  .mso-target .mod-4col-stack .col-1,
+  .ie-target .mod-4col-stack .col-2,
+  .mso-target .mod-4col-stack .col-2,
+  .ie-target .mod-4col-stack .col-3,
+  .mso-target .mod-4col-stack .col-3,
+  .ie-target .mod-4col-stack .col-4,
+  .mso-target .mod-4col-stack .col-4
   {
     width: 100% !important;
   }
-
- 
+ /*
+  |--------------------------------------------------------------------------
+  |  2COL STACK LONG
+  |-------------------------------------------------------------------------- 
+  */  
+   /**  Overide width to work with mso/ie conditional code - define first COL container td width */
+  .ie-target .width-145,
+  .mso-target .width-145
+  {
+    width: 145px !important;
+  }
+   /**  Overide inline percentage css width to work with mso/ie conditional code - full width table COL & gutter in L&R container td  */
+  .ie-target .mod-2col-long-stack .col-l,
+  .mso-target .mod-2col-long-stack .col-l,
+  .ie-target .mod-2col-long-stack .col-r,
+  .mso-target .mod-2col-long-stack .col-r,
+  .ie-target .mod-2col-long-stack .gutter,
+  .mso-target .mod-2col-long-stack .gutter,
+  .ie-target .mod-2col-long-stack .col-1,
+  .mso-target .mod-2col-long-stack .col-1,
+  .ie-target .mod-2col-long-stack .col-2,
+  .mso-target .mod-2col-long-stack .col-2,
+  .ie-target .mod-2col-long-stack .col-3,
+  .mso-target .mod-2col-long-stack .col-3,
+  .ie-target .mod-2col-long-stack .col-4,
+  .mso-target .mod-2col-long-stack .col-4
+  {
+    width: 100% !important;
+  }
