@@ -314,6 +314,7 @@ gulp.task('css:inline-ignore', function(){
         .pipe(replace('<link rel="stylesheet" href="css/resets.css">', ''))
         .pipe(replace('<link rel="stylesheet" href="css/style.css">', ''))
         .pipe(replace('<link rel="stylesheet" href="css/media-queries.css">', ''))
+        .pipe(replace('<link rel="stylesheet" href="css/media-queries-kinetic.css">', ''))
        .pipe(gulp.dest('src/compiled/'));
 });
 
@@ -433,8 +434,8 @@ gulp.task('compile', function (callback) {
     'css:inline-ignore',
     'css:inline',
     'css:inject',
-    'css:comments-strip',
-    'watch',
+/*    'css:comments-strip',
+*/    'watch',
     callback
 //  ^^^^^^^^
 //  This informs that the sequence is complete.

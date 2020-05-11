@@ -5,7 +5,7 @@
 
 BREAKPOINT 1 (+ 15px scrollbar)  - Fluid 
 ========================================================================== */
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 680px) {
      /**  PRESETS */
     .nomob {
         display: none !important;
@@ -14,6 +14,7 @@ BREAKPOINT 1 (+ 15px scrollbar)  - Fluid
         display: block !important;
         max-height: none !important;
         font-size: 12px !important;
+        overflow: auto !important;
     }
     .container {
         width: 100% !important;
@@ -25,16 +26,40 @@ BREAKPOINT 1 (+ 15px scrollbar)  - Fluid
     .max-width-none {
         max-width: none !important;
     }
-    .nopad {
-        padding: 0 !important;
+    td.container__td {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
+    .width-100percent { 
+        width: 100% !important;
+    }
+    .width-80percent { 
+        width: 80% !important;
+    }
+    /*
+    |--------------------------------------------------------------------------
+    |  HEADER 
+    |-------------------------------------------------------------------------- 
+    */
+    #header #logo img
+    {
+        width: 80% !important;
+    }
+    /*
+    |--------------------------------------------------------------------------
+    |  Full width image - mob 
+    |-------------------------------------------------------------------------- 
+    */  
+    .pad-top-32 {
+         padding-top: 32px !important;
+    } 
     /*
     |--------------------------------------------------------------------------
     | 4COL STACK 
     |-------------------------------------------------------------------------- 
     */    
  
-   .mod-4col-stack .col-r,
+  /*  .mod-4col-stack .col-r,
    .mod-4col-stack .col-l
     {
         width:  100% !important;
@@ -42,55 +67,10 @@ BREAKPOINT 1 (+ 15px scrollbar)  - Fluid
     .mod-4col-stack img {
     width:  100% !important;
     max-width: none !important;
-    }
-    /*
-    |--------------------------------------------------------------------------
-    | 2COL LONG STACK 
-    |-------------------------------------------------------------------------- 
-    */    
-   .mod-2col-long-stack .col-r,
-   .mod-2col-long-stack .col-l
-    {
-        width:  100% !important;
-    }
-    .mod-2col-long-stack img {
-    width:  100% !important;
-    max-width: none !important;
-    }
-   .mod-2col-long-stack .col-long
-    {
-        width:  100% !important;
-    }
+    } */
+    .div-half-width { width: 100% !important; max-width: 50% !important; } 
+    .div-4col-pids { width: 50% !important; max-width: none !important; }
     
-}
-
-/*  
-BREAKPOINT 2 -  Stack 
-============================================================================= */
-@media only screen and (max-width: 580px) {
-    .container {
-        width: 100% !important;
-        padding: 0;
-    }
-    .center .container td {
-        text-align: center !important;
-    }
-    u + .body .wrapper {
-        width: 100% !important;
-        width: 100vw !important;
-    }
-    .width-100percent {
-        width: 100% !important;
-    }
-    /*
-    |--------------------------------------------------------------------------
-    |  1COL 
-    |-------------------------------------------------------------------------- 
-    */
-    .mod-1col #logo img
-    {
-        width: 80% !important;
-    }
 
     /*
     |--------------------------------------------------------------------------
@@ -98,11 +78,114 @@ BREAKPOINT 2 -  Stack
     |-------------------------------------------------------------------------- 
     */ 
     /**  apply 100% width to L&R cols to stack */
-    .mod-2col-stack .col-l,
-    .mod-2col-stack .col-r {
+  /*   .mod-2col-stack .col-l,
+    .mod-2col-stack .col-r,
+    .mod-2col-stack-even .col-l,
+    .mod-2col-stack-even .col-r,
+    .mod-2col-stack-uneven .col-l, 
+    .mod-2col-stack-uneven .col-r {
         width: 100% !important;
     }
-    
+     */
+     /*
+    |--------------------------------------------------------------------------
+    |   SINGLE STORY - 2 COL STACK UNEVEN
+    |-------------------------------------------------------------------------- 
+    */
+
+    td.align-center, table.align-center, img.align-center {
+        text-align: center !important;
+         margin: 0 auto !important;
+    }
+    .width-70perc { 
+        width: 100% !important; max-width: 70% !important; 
+    } 
+    .jn-h2-mod-container {
+        line-height: 20px !important;
+    }
+    .mod-2col-uneven td.container__td {
+        line-height: 20px !important;
+    }
+         /*
+    |--------------------------------------------------------------------------
+    |   FURTHER READING - 3 COL STACK
+    |-------------------------------------------------------------------------- 
+    */
+/*     .fr-text { font-size: 16px !important; line-height: 18px; }
+ */ .fr-divider > table { width: 41% !important; }
+    /* .fr-divider > div { width: 41% !important; } */
+    }
+    .mod-3col-stack-fr.first .container__td_ {
+    padding-top: 13px !important; 
+    }
+    .mod-3col-stack-fr.last .container__td_ {
+    padding-bottom: 13px !important; 
+    }
+
+    /*
+    |--------------------------------------------------------------------------
+    |  PROMO  - 2 COL STACK 
+    |-------------------------------------------------------------------------- 
+    */
+    .mod-2col-promo .column {
+         width: 50% !important;
+        
+    }
+
+
+/*  
+BREAKPOINT 2 -  Stack 
+============================================================================= */
+@media only screen and (max-width: 560px) {
+   /*  .container {
+        width: 100% !important;
+        padding: 0;
+    }
+    .center .container td {
+        text-align: center !important;
+    } */
+    u + .body .wrapper {
+        width: 100% !important;
+        width: 100vw !important;
+    }
+   /*
+    |--------------------------------------------------------------------------
+    | PIDS - 4COL STACK (+ Further Reading 3COL)  
+    |-------------------------------------------------------------------------- 
+    */  
+  .div-half-width { width: 100% !important; max-width: none !important; } /* 2COL | 3COL | 4PID | stack 2COL & 3COL & 4PID to single columns at 2nd breakpoint */
+  .float-l { float: left; }  /* 3COL | 3PID | 4PID | required for gmail app */
+  .float-r { float: right; } /* 3COL | 3PID | 4PID | required for gmail app */
+  .product-table { max-width: none !important; } /* 3PID | 4PID | enable 2 column stacking | also overide "float: right" on third 3PID column with float: none - jh removed this as not sure is necessary? */
+  /*  
+  .img-product { width: 100% !important;  max-width: none !important;}  *//* 3PID | 4PID | img-product also no longer inset/padded so module edges align with 2COL & 3COL max-width: none is optional depending onwherther you want pids to retain original size or scale for mobile; */
+/*   .product-title,
+  .product-text { padding-left: 0 !important;padding-right: 0 !important; } */ /* 3PID | 4PID | remove excess product padding */
    
+    /*
+    |--------------------------------------------------------------------------
+    | EDITORS LETTER 
+    |-------------------------------------------------------------------------- 
+    */ 
+  .width-90percent { 
+        width: 90% !important;
+    }
+}
+
+/*  
+BREAKPOINT 3 -  Mob-Stack 
+============================================================================= */
+@media only screen and (max-width: 514px) {
+  /*
+    |--------------------------------------------------------------------------
+    |  PROMO  - 2 COL STACK 
+    |-------------------------------------------------------------------------- 
+    */
+  .mod-2col-promo .column,
+  .mod-2col-promo .img {  width: 90% !important; max-width: none !important; }
+  .mod-2col-promo .contents, 
+  .mod-2col-promo .inner{ text-align: center !important; width: 100% !important;
+    }
+
 }
 

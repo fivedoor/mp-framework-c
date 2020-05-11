@@ -9,67 +9,25 @@
 
   */
   /** Fix widths for conditional tables */
+
+
   .ie-target .container__td,
   .mso-target .container__td {
       padding-right: 20px !important; 
       padding-left: 20px !important;
   }
- 
+</style>
+ <!--[if !mso]><!-->
+<style type="text/css">
  /*
   |--------------------------------------------------------------------------
-  |  4COL STACK 
+  |  SPOTLIGHT TEXT BLOCK
   |-------------------------------------------------------------------------- 
-  */    
-  /**  Overide width to work with mso/ie conditional code - define first COL container td width */
-  .ie-target .width-145,
-  .mso-target .width-145
-  {
-    width: 145px !important;
-  }
- /**  Overide inline percentage css width to work with mso/ie conditional code - full width table COL & gutter in L&R container td  */
-  .ie-target .mod-4col-stack .col-l,
-  .mso-target .mod-4col-stack .col-l,
-  .ie-target .mod-4col-stack .col-r,
-  .mso-target .mod-4col-stack .col-r,
-  .ie-target .mod-4col-stack .gutter,
-  .mso-target .mod-4col-stack .gutter,
-  .ie-target .mod-4col-stack .col-1,
-  .mso-target .mod-4col-stack .col-1,
-  .ie-target .mod-4col-stack .col-2,
-  .mso-target .mod-4col-stack .col-2,
-  .ie-target .mod-4col-stack .col-3,
-  .mso-target .mod-4col-stack .col-3,
-  .ie-target .mod-4col-stack .col-4,
-  .mso-target .mod-4col-stack .col-4
-  {
-    width: 100% !important;
-  }
- /*
-  |--------------------------------------------------------------------------
-  |  2COL STACK LONG
-  |-------------------------------------------------------------------------- 
-  */  
-   /**  Overide width to work with mso/ie conditional code - define first COL container td width */
-  .ie-target .width-145,
-  .mso-target .width-145
-  {
-    width: 145px !important;
-  }
-   /**  Overide inline percentage css width to work with mso/ie conditional code - full width table COL & gutter in L&R container td  */
-  .ie-target .mod-2col-long-stack .col-l,
-  .mso-target .mod-2col-long-stack .col-l,
-  .ie-target .mod-2col-long-stack .col-r,
-  .mso-target .mod-2col-long-stack .col-r,
-  .ie-target .mod-2col-long-stack .gutter,
-  .mso-target .mod-2col-long-stack .gutter,
-  .ie-target .mod-2col-long-stack .col-1,
-  .mso-target .mod-2col-long-stack .col-1,
-  .ie-target .mod-2col-long-stack .col-2,
-  .mso-target .mod-2col-long-stack .col-2,
-  .ie-target .mod-2col-long-stack .col-3,
-  .mso-target .mod-2col-long-stack .col-3,
-  .ie-target .mod-2col-long-stack .col-4,
-  .mso-target .mod-2col-long-stack .col-4
-  {
-    width: 100% !important;
-  }
+  */   
+  .firstcharacter {
+  float: left;
+  font-family: Georgia;
+  font-size: 100px;
+  line-height: 60px;
+  padding: 0 12px 8px 0;
+}

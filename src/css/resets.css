@@ -45,16 +45,6 @@ p {
 img {
     -ms-interpolation-mode: bicubic;
 }
-img {
-    height: auto;
-
-    line-height: 100%;
-
-    text-decoration: none;
-
-    border: 0;
-    outline: none;
-}
 table {
     border-spacing: 0;
     border-collapse: collapse !important;
@@ -100,12 +90,4 @@ a[href^="sms"] {
     pointer-events: auto;
 
     color: #30383d !important;
-}
-#outlook a {
-    padding: 0;
-}
-.black a {
-    text-decoration: none;
-
-    color: #30383d;
 }

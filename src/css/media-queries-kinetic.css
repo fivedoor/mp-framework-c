@@ -1,0 +1,57 @@
+
+  @media only screen and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 0) {
+    /* CSS specific to iOS devices */ 
+   .mob-nav-hamburger {
+      width: 100% !important; 
+      height: auto !important; 
+      overflow: visible !important; 
+      display: block !important; 
+    }
+    #wrapper + table, .container, .menu {
+        min-width: 0 !important; 
+        -moz-text-size-adjust: none; 
+        -ms-text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+         width: 100% !important;
+    }
+
+    #mobile-label { 
+       background-color: #ffffff; 
+       cursor: pointer; 
+       display: block !important;
+       float: left; 
+       padding-left:10px; 
+       padding-right:10px; 
+       -webkit-tap-highlight-color: transparent;
+       width: 18px;
+     }
+     
+    #mobile-label > b { 
+        background-color: #000000;
+         display: block;
+         height: 2px; 
+    }
+     
+    #mobile-label > b + b { margin-top: 4px;}
+
+   .menu td { padding-top: 5px !important; padding-bottom:5px; background-color:#ffffff !important; }
+    
+    #menu-wrapper { 
+      max-height: 0; 
+      overflow: hidden; 
+      -moz-transition: max-height 0.25s linear; 
+      -ms-transition: max-height 0.25s linear;
+      -o-transition: max-height 0.25s linear; 
+      -webkit-transition: max-height 0.25s linear; 
+      transition: max-height 0.25s linear;
+      width: 100% !important; 
+       display: block !important; 
+    }
+    
+    #mobile-checkbox:checked + table #menu-wrapper { max-height: 20%; }
+    a.nav-mob-col-l { display:block !important; padding: 15px 0 15px 10px !important; width:100% !important;} 
+    a.nav-mob-col-r {display:block !important; padding: 15px 10px 15px 0 !important; width:100% !important;}
+    td.nav-mob-col-lsale, td.nav-mob-col-l, td.nav-mob-col-r { font-family: 'Georgia', serif !important; letter-spacing:0.5px !important; font-size: 12px !important; line-height:15px !important; text-transform: none !important;}
+    a.nav-mob-col-l, a.nav-mob-col-r { color:#2b2b2b !important; text-decoration: none !important;} 
+    td.nav-mob-col-lsale { color:#bc0a1a !important; } 
+}
